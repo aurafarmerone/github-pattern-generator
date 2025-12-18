@@ -1,0 +1,218 @@
+* {
+  box-sizing: border-box;
+}
+
+/* ================= GRID BACKGROUND ================= */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+
+  background-color: #f9fafb;
+  background-image:
+    linear-gradient(to right, #e5e7eb 1px, transparent 1px),
+    linear-gradient(to bottom, #e5e7eb 1px, transparent 1px);
+  background-size: 40px 40px;
+}
+
+/* ================= HEADER ================= */
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 40px;
+  background: #fff;
+  border-bottom: 1px solid #d0d7de;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+}
+
+.logo-icon {
+  display: none;
+  /* Hide old icon if present or remove */
+}
+
+.header-logo {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 10px;
+}
+
+.nav a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #24292f;
+  position: relative;
+  transition: color 0.2s ease;
+}
+
+.nav a:hover {
+  color: #FA2A55;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+/* ================= PAGE ================= */
+.page-wrapper {
+  display: flex;
+  justify-content: center;
+  padding: 50px 0;
+}
+
+/* ================= CARD ================= */
+.card {
+  background: #fff;
+  border: 1px solid #d0d7de;
+  border-radius: 16px;
+  padding: 24px;
+  width: fit-content;
+}
+
+/* ================= CARD HEADER ================= */
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.star-btn {
+  background: #000;
+  color: #fff;
+  padding: 6px 12px;
+  border-radius: 8px;
+  font-size: 13px;
+  text-decoration: none;
+  transition: transform 0.2s ease;
+  display: inline-block;
+  /* Ensure transform works */
+}
+
+.star-btn:hover {
+  transform: scale(1.1);
+}
+
+/* ================= GRID ================= */
+.hint {
+  font-size: 13px;
+  color: #000000;
+  margin-bottom: 12px;
+}
+
+.months {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  font-size: 12px;
+  color: #57606a;
+  margin-left: 48px;
+  margin-bottom: 6px;
+}
+
+.grid-wrapper {
+  display: flex;
+}
+
+.days {
+  display: grid;
+  grid-template-rows: repeat(7, 16px);
+  gap: 5px;
+  font-size: 11px;
+  color: #57606a;
+  margin-right: 8px;
+}
+
+#grid {
+  display: grid;
+  grid-template-columns: repeat(53, 14px);
+  gap: 5px;
+}
+
+.cell {
+  width: 14px;
+  height: 14px;
+  background: #ebedf0;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.cell.active {
+  background: #2da44e;
+}
+
+/* ================= BUTTONS ================= */
+.actions {
+  margin-top: 20px;
+}
+
+#download {
+  background: #fff;
+  border: 1px solid #d0d7de;
+  color: #24292f;
+  padding: 10px 16px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+#download:hover {
+  background: #FA2A55;
+  color: #fff;
+  border-color: #FA2A55;
+  transform: scale(1.1);
+}
+
+#download:active {
+  transform: scale(1);
+}
+
+.reset {
+  margin-left: 10px;
+  background: #fff;
+  border: 1px solid #d0d7de;
+  padding: 10px 16px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.reset:hover {
+  transform: scale(1.1);
+  background-color: #007bff;
+  color: #fff;
+  border-color: #007bff;
+}
+
+.reset:active {
+  transform: scale(1);
+  background-color: #fff;
+  color: #24292f;
+  border-color: #d0d7de;
+}
+
+/* ================= FOOTER ================= */
+.footer {
+  text-align: center;
+  margin: 30px 0;
+  color: #57606a;
+}
+
+.socials a {
+  margin: 0 10px;
+  color: #000;
+  font-size: 24px;
+  display: inline-block;
+  transition: transform 0.2s ease, text-shadow 0.2s ease;
+}
+
+.socials a:hover {
+  transform: scale(1.2);
+  text-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+* {
+  caret-color: transparent;
+}
