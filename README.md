@@ -34,9 +34,9 @@ Whether you want to create GitHub art, test automation scripts, or just experime
 
 ## 🚀 Live Demo
 
-The project is hosted using **GitHub Pages**:
+The project is hosted using **Firebase with CI/CD Pieplines**:
 
-🔗 **Live Website:** https://aurafarmerone.github.io/github-pattern-generator/
+🔗 **Live Website:** https://github-pattern-generator.web.app/
 
 
 
