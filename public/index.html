@@ -19,6 +19,9 @@
 
     <nav class="nav">
       <a href="index.html" class="active">🎨 Draw first, Commit later.</a>
+      <button id="theme-toggle" class="theme-toggle" aria-label="Toggle Dark Mode">
+        <i class="fas fa-moon"></i>
+      </button>
     </nav>
   </header>
 
@@ -38,8 +41,10 @@
 
       <p class="hint">
         <strong>✍🏻 Unleash Your Creativity with Every Dot:</strong><br>
-        <b> 🖱️ Left Click  → Add</b><br>
-        <b> 🖱️ Right Click → Remove</b>
+        <span class="instruction-line"><img src="assets/mouse-left.svg" class="mouse-icon" alt="Left Click"> <b>Left
+            Click → Add</b> <span class="demo-cell filled"></span></span><br>
+        <span class="instruction-line"><img src="assets/mouse-right.svg" class="mouse-icon" alt="Right Click"> <b>Right
+            Click → Remove</b> <span class="demo-cell empty"></span></span>
       </p>
 
       <!-- Month labels -->

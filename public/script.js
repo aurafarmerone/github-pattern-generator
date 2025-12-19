@@ -55,3 +55,38 @@ document.getElementById("download").onclick = () => {
   a.download = "pattern.json";
   a.click();
 };
+/* ================= THEME TOGGLE ================= */
+const toggleBtn = document.getElementById("theme-toggle");
+const toggleIcon = toggleBtn.querySelector("i");
+const rootElement = document.documentElement;
+
+// Function to set theme
+function setTheme(theme) {
+  if (theme === "dark") {
+    rootElement.setAttribute("data-theme", "dark");
+    toggleIcon.classList.remove("fa-moon");
+    toggleIcon.classList.add("fa-sun");
+    localStorage.setItem("theme", "dark");
+  } else {
+    rootElement.removeAttribute("data-theme");
+    toggleIcon.classList.remove("fa-sun");
+    toggleIcon.classList.add("fa-moon");
+    localStorage.setItem("theme", "light");
+  }
+}
+
+// Check local storage on load
+const savedTheme = localStorage.getItem("theme");
+if (savedTheme) {
+  setTheme(savedTheme);
+} else if (window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches) {
+  // Optional: Auto-detect system preference if no saved preference
+  setTheme("dark");
+}
+
+// Toggle event
+toggleBtn.onclick = () => {
+  const currentTheme = rootElement.getAttribute("data-theme");
+  const newTheme = currentTheme === "dark" ? "light" : "dark";
+  setTheme(newTheme);
+};

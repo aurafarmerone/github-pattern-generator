@@ -1,0 +1,10 @@
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Mouse Body: White fill, Dark stroke -->
+  <rect x="6" y="2" width="12" height="20" rx="6" fill="#FFFFFF" stroke="#24292f" stroke-width="2"/>
+  <!-- Middle Line -->
+  <line x1="12" y1="2" x2="12" y2="10" stroke="#24292f" stroke-width="2"/>
+  <!-- Horizontal Line -->
+  <line x1="6" y1="10" x2="18" y2="10" stroke="#24292f" stroke-width="2"/>
+  <!-- Right Click Highlight -->
+  <path d="M12 2C15.3137 2 18 4.68629 18 8V10H12V2Z" fill="#ff4d4d"/>
+</svg>
